@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="styles/styles.css">
-    
+
 </head>
 
 <body>
@@ -16,22 +16,45 @@
         </h1>
     </header>
     <main>
-        <h1>This is the Main part</h1>
-        <ul>
-            <li>Hello</li>
-            <li>Good Morning</li>
-            <li>JavaScript</li>
-        </ul>
-        <ul>
-            <li>DOM</li>
-            <li>Document</li>
-            <li>Object</li>
-            <li>Module</li>
-        </ul>
+        <section>
+            <h1>This is the Main part</h1>
+            <ul>
+                <li>Hello</li>
+                <li>Good Morning</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        <section>
+            <h1 class="dom_object">DOM Obeject</h1>
+            <ul>
+                <li>DOM</li>
+                <li>Document</li>
+                <li>Object</li>
+                <li>Module</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places">Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Sundarban</li>
+                <li class="important-places">Sajek</li>
+                <li class="important-places">Tanguar Haor</li>
+            </ul>
+        </section>
     </main>
     <script src="js/script.js"></script>
     <script>
+        const dom = document.getElementsByClassName("dom_object");
+        for (const domfound of dom){
+            domfound.innerHTML = "Title changed by the Js";
+        }
+       const placesToVisit = document.getElementsByClassName("important-places");
+       for( const place of placesToVisit) {
+        console.log(place.innerText);
         
+       }
+       
+        // console.log(placesToVisit);
     </script>
 </body>
 

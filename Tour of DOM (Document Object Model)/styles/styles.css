@@ -1,3 +1,11 @@
-h1 {
+h1, ul {
     color: tomato;
+}
+
+#places {
+    color: black;
+}
+
+.important-places {
+    color:aquamarine;
 }
