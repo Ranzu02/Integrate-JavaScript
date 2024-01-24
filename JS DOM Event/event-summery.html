@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summery</title>
+</head>
+
+<body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="change-text">Default Text</h3>
+    <p id="paragraph">This is the Paragraph text to be changed by using iput text</p>
+    <input id="input-text" type="text">
+    <button id="update">Update Text</button>
+    <br>
+    <br>
+    <button onclick="handleOnClick()">Handle Event by Add onclick Function</button>
+    <button id="event-listener">Handle event by addEventListener</button>
+    <script>
+
+        // Option 1
+        function handleOnClick() {
+            const text = document.getElementById('change-text');
+            text.innerText = "Text has been changed by Handle Event";
+        }
+        // Option 2
+        document.getElementById('event-listener').addEventListener('click', function () {
+            const text = document.getElementById('change-text');
+            text.innerText = "Text Updated  by Add Event listener";
+        })
+
+        document.getElementById('update').addEventListener('click', function(){
+            const formText = document.getElementById('input-text');
+            const formTextData = formText.value;
+            const p = document.getElementById('paragraph');
+            p.innerText = formTextData;
+            formText.value = "";
+        })
+    </script>
+</body>
+
+</html>
