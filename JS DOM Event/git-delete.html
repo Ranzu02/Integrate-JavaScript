@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Elements</title>
+</head>
+<body>
+    <h1 id="data">Confidential Data</h1>
+    <button id="delete-button">Delete</button>
+    <input id="text-area" type="text">
+    <script>
+        document.getElementById('text-area').addEventListener('keyup', function(event){
+            const text =event.target.value;
+            if (text === 'delete'){
+                document.getElementById('delete-button').removeAttribute('disabled');
+            }
+            else {
+                document.getElementById('delete-button').setAttribute('disabled', true);
+            }
+        })
+        document.getElementById('delete-button').setAttribute('disabled', true);
+
+        document.getElementById('delete-button').addEventListener('click', function(){
+            const data = document.getElementById('data');
+            data.setAttribute('hidden', true);
+
+        })
+    </script>
+</body>
+</html>
