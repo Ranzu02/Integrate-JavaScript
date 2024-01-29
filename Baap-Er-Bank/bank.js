@@ -12,3 +12,4 @@ document.getElementById('button').addEventListener('click', function(){
         alert("It's not a valid user");
     }
 })
+
