@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Price with a coupon code</title>
+</head>
+
+<body>
+    <section id="section">
+        <h1>Changing price for a valid coupon code</h1>
+        <p id="original">Price: <span id="original-price">100</span></p>
+        <input type="text" id="coupon" placeholder="Enter your Coupon Code Here">
+        <button id="btn-apply">Apply Coupon</button>
+        <!-- <P>New Price: </P> -->
+    </section>
+
+    <script>
+        document.getElementById('btn-apply').addEventListener('click', myFunction);
+
+        function myFunction() {
+            const originalPriceElement = document.getElementById('original-price');
+            const originalPriceString = originalPriceElement.innerText;
+            const originalPrice = parseFloat(originalPriceString);
+
+            const priceAfterDiscount = (originalPrice * 70) / 100;
+
+            const couponEntered = document.getElementById('coupon');
+            const couponFieldValue = couponEntered.value;
+            const section = document.getElementById('section');
+            const paragraph = document.createElement('p');
+            const originalPriceParagraph = document.getElementById('original');
+
+            if (couponFieldValue === "DISCOUNT30") {
+
+                paragraph.innerText = "The new price is" + priceAfterDiscount;
+                section.appendChild(paragraph);
+                // document.getElementById('btn-apply').removeEventListener('click', myFunction);
+
+            }
+            else {
+                alert("You have entered wrong coupon");
+                paragraph.innerText = "The Price remain Same as:" + originalPrice;
+                section.appendChild(paragraph);
+                // document.getElementById('btn-apply').removeEventListener('click', myFunction);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+</head>
+
+<body>
+    <h1>Changing price when clickin on the Apply button</h1>
+    <section id="sec">
+        <p>Price: <span id="price">1000</span></p>
+        <button id="btn-apply">Apply</button>
+    </section>
+
+    <script>
+        document.getElementById('btn-apply').addEventListener('click', myFunction);
+        
+        function myFunction(){
+            const priceElement = document.getElementById('price');
+
+            const priceString = priceElement.innerText;
+            const priceNumber = parseFloat(priceString);
+            const reducedPrice = (priceNumber*70) / 100;
+            console.log(reducedPrice);
+            const paragraph = document.createElement("p");
+            paragraph.innerText= "please pay " + reducedPrice;
+
+            const section = document.getElementById('sec');
+            section.appendChild(paragraph);
+            document.getElementById('btn-apply').removeEventListener('click', myFunction);
+
+        }
+    </script>
+</body>
+
+</html>
