@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ca996d26ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="container mx-auto">
+
+        <div class="bg-blue-300 pb-9">
+            <h1 class="text-4xl text-center pb-9">My Text Editor</h1>
+
+            <div class="w-2/3 mx-auto border border-gray-800">
+                <!-- button icon div -->
+                <div class="grid grid-cols-3 text-center py-6">
+                    <div>
+                        <button id="bold"><i class="fa-solid fa-bold"></i></button>
+                        <button id ="italic"><i class="fa-solid fa-italic"></i></button>
+                        <button id="under-line"><i class="fa-solid fa-underline"></i></button>
+                    </div>
+                    <div>
+                        <button id="text-left"><i class="fa-solid fa-align-left"></i></button>
+                        <button id="text-center"><i class="fa-solid fa-align-center"></i></button>
+                        <button id="text-right"><i class="fa-solid fa-align-right"></i></button>
+                        <button id="text-justify"><i class="fa-solid fa-align-justify"></i></button>
+                    </div>
+                    <div>
+                        <select id="fontSize" onclick="changeSize()">
+                            <option value="1">1</option>      
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                          </select>
+                          <button><i class="fa-solid fa-font-case"></i></button>
+                          <input class="color-apply" type="color" onchange="chooseColor()" id="myColor"> 
+                        
+                        
+                    </div>
+                </div>
+                <hr class="border-black mx-4">
+                <!-- Text area div -->
+                <div class="m-4">
+                    <textarea name="" id="text-area" cols="30" rows="15" class="w-full text"></textarea>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <script>
+        document.getElementById('bold').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            console.log(textArea);
+            textArea.classList.add('text_bold');
+        })
+
+        document.getElementById('italic').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            textArea.classList.add('italic');
+        })
+
+        document.getElementById('under-line').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            textArea.classList.add('underline');
+        })
+
+        document.getElementById('text-left').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            textArea.classList.add('text-left');
+        })
+
+        document.getElementById('text-center').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            textArea.classList.add('text-center');
+        })
+
+        document.getElementById('text-right').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            textArea.classList.add('text-right');
+        })
+
+        document.getElementById('text-left').addEventListener('click', function(){
+            const textArea = document.getElementById('text-area');
+            textArea.classList.add('text-left');
+        })
+
+    </script>
+</body>
+
+</html>
