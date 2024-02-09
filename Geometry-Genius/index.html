@@ -2,63 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Genius</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Genius</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header>
+  <header>
 
-    </header>
-    <main class="container mx-auto">
-        <div class="flex p-9">
-            <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
-                <!-- Cards -->
-                <div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src="images/triangle.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                          <h2 class="card-title">Shoes!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                          <h2 class="card-title">Shoes!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div>
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                          <h2 class="card-title">Shoes!</h2>
-                          <p>If a dog chews shoes whose shoes does he choose?</p>
-                          <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                          </div>
-                        </div>
-                      </div>
-                </div>
+  </header>
+  <main class="container mx-auto">
+    <div class="flex p-9">
+      <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+        <!-- Cards -->
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-bold">Trinagle</h2>
+              <p>Area (A) = 0.5 X b X h
+              </p>
+              <p>
+                <input type="text" class="border w-24 bg-gray-200" placeholder="Base" name="" id="base">
+                <span class="ml-3">cm</span>
+                <input type="text" class="border w-24 bg-gray-200 ml-4" placeholder="Height" name="" id="height">
+                <span class="ml-3">cm</span>
+              </p>
+              <p>Area: <span id="triangle-area">0</span><span> cm <sup>2</sup></span></p>
+              <div class="card-actions justify-end">
+                <button onclick="calculateTraingleArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
             </div>
-            <div>
-                <h1>Area Calculator</h1>
-            </div>
+          </div>
         </div>
-    </main>
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-bold">Rectangle</h2>
+              <p>Area (A) = W X L</p>
+              <p>
+                <input type="text" class="border w-24 bg-gray-200" placeholder="Width" name="" id="width">
+                <span class="ml-3">cm</span>
+                <input type="text" class="border w-24 bg-gray-200 ml-4" placeholder="Length" name="" id="length">
+                <span class="ml-3">cm</span>
+              </p>
+              <p>Area: <span id="rectangle-area">0</span><span> cm<sup>2</sup></span></p>
+              <div class="card-actions justify-end">
+                <button onclick="rectangleArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 class="text-2xl font-bold">Parallelogram</h2>
+              <p>Area (A) = B X H</p>
+              <p>
+                <input type="text" class="border w-24 bg-gray-200" placeholder="Base" name="" id="parallelogram-base">
+                <span class="ml-3">cm</span>
+                <input type="text" class="border w-24 bg-gray-200 ml-4" placeholder="Height" name="" id="parallelogram-height">
+                <span class="ml-3">cm</span>
+              </p>
+              <p>Area: <span id="parallelogram-area">0</span><span> cm<sup>2</sup></span></p>
+              <div class="card-actions justify-end">
+                <button onclick="parallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1>Area Calculator</h1>
+      </div>
+    </div>
+  </main>
+  <script src="scripts/calculator.js"></script>
 </body>
 
 </html>
