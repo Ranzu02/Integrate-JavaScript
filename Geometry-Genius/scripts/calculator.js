@@ -1,14 +1,9 @@
 function calculateTraingleArea(){
     const base =  document.getElementById('base').value;
     const baseNumber = parseFloat(base);
-    if (base == "" || Number.isNaN(baseNumber) == true){
-        alert("Please enter a valid number");
-        return;
-    }
-    
     const height = document.getElementById('height').value;
     const heightNumber = parseFloat(height);
-    if (height == "" || Number.isNaN(heightNumber) == true){
+    if (height == "" || Number.isNaN(heightNumber) == true || base == "" || Number.isNaN(baseNumber) == true){
         alert('Please enter a valid number');
         return;
     }
@@ -22,14 +17,9 @@ function calculateTraingleArea(){
 function rectangleArea(){
     const width = document.getElementById('width').value;
     const widthNumber = parseFloat(width);
-    if (width == "" || Number.isNaN(widthNumber) == true){
-        alert('Please enter a valid number');
-        return;
-    }
-
     const length = document.getElementById('length').value;
     const lengthNumber = parseFloat(length);
-    if(length == "" || Number.isNaN(lengthNumber) == true){
+    if(length == "" || Number.isNaN(lengthNumber) == true || width == "" || Number.isNaN(widthNumber) == true){
         alert("Please enter a valid number");
         return;
     }
@@ -66,4 +56,17 @@ function elementValue(elementId){
 function elementInnerText(elementId, area){
     const getElement = document.getElementById(elementId);
     getElement.innerText = area;
+}
+
+
+// Ellipse Area using functions
+
+function ellipseArea(){
+    const major = elementValue('ellipse-major');
+    const minor = elementValue('ellipse-minor');
+
+    const ellipseArea = Math.PI * major * minor;
+    const ellipseAreTwo = ellipseArea.toFixed(2);
+
+    elementInnerText('ellipse-area', ellipseAreTwo);
 }
