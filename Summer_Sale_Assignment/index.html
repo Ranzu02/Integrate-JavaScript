@@ -38,136 +38,184 @@
                 <div class="flex-1 ">
                     <div class="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                         <!-- Card 1 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price1', 'product-name1')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>K. Accessories</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name1" class="text-xl font-semibold">K. Accessories</p>
+                                <p id="price1" class="text-[#898989]">185.45 TK</p>
                             </div>
                         </div>
                         <!-- Card 2 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price2', 'product-name2')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>K. Accessories</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name2" class="text-xl font-semibold">K. Accessories</p>
+                                <p id="price2" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 3 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price3', 'product-name3')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>K. Accessories</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name3" class="text-xl font-semibold">K. Accessories</p>
+                                <p id="price3" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                     <h2 class="text-5xl font-semibold pt-16 pb-10">Sportsware</h2>
                     <div class="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                         <!-- Card 1 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price4', 'product-name4')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod4.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>Sports Back Cap</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name4" class="text-xl font-semibold">Sports Back Cap</p>
+                                <p id="price4" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 2 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price5', 'product-name5')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>Full Jersey Set</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name5" class="text-xl font-semibold">Full Jersey Set</p>
+                                <p id="price5" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 3 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price6', 'product-name6')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>Sports Cats</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name6" class="text-xl font-semibold">Sports Cats</p>
+                                <p id= "price6" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                     <h2 class="text-5xl font-semibold pt-16 pb-10">Furniture</h2>
                     <div class="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                         <!-- Card 1 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price7', 'product-name7')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod7.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>Single Relux Chair</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name7" class="text-xl font-semibold">Single Relux Chair</p>
+                                <p id="price7" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 2 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price8', 'product-name8')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod8.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p>Children Play</p>
-                                <div class="card-actions">
-                                    <button class="btn btn-primary">Buy Now</button>
-                                </div>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name8" class="text-xl font-semibold">Children Play</p>
+                                <p id="price8" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 3 -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div onclick = "getProductPrice('price9', 'product-name9')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
                                 <img src="images/prod9.png" alt="Shoes" class="rounded-xl" />
                             </figure>
                             <div class="card-body items-center text-center">
-                                <h2 class="card-title">Shoes!</h2>
-                                <p class="text-xl font-semibold">Flexible Sofa</p>
-                                <p class="text-[#898989]"><span>185.00</span> TK</p>
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                                  </div>
+                                <p id="product-name9" class="text-xl font-semibold">Flexible Sofa</p>
+                                <p id="price9" class="text-[#898989]"><span>185.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="bg-[#ffffff] p-8">
-                        <h4 class="text-2xl font-medium">Have coupon?</h4>
-                        <input class="border" placeholder="Your Coupon" type="text" name="" id="">
-                        <button class="btn">Apply</button>
+                    <div class="bg-[#ffffff] p-8 rounded-md">
+                        <h4 class="text-2xl font-medium pb-4">Have coupon?</h4>
+                        <input class="border py-2" placeholder="Your Coupon" type="text" name="" id="">
+                        <button id="button-apply" class="bg-[#e527b2] py-2 px-4 rounded-l-none rounded-md text-xl font-semibold text-white -ml-2" disabled>Apply</button>
+                    </div>
+                    <div class="bg-[#ffffff] p-8 mt-8 rounded-md">
+                        <h4 class="text-2xl font-medium pb-4">Your Items are:</h4>
+                        <div id="items">
+
+                        </div>
+                        <hr>
+                        <p class="text-xl font-medium text-[#e1e1e1] pb-2">Total Price: <span id="total-price">0</span> TK</p>
+                        <p class="text-xl font-medium text-[#e1e1e1] pb-2">Discount: <span id="discount">0</span> TK</p>
+                        <p class="text-xl font-medium text-[#e1e1e1] pb-2">Total: <span id="price-after-discount">0</span> TK</p>
                     </div>
                     <div>
-
+                        <button class="bg-[#e527b2] py-2 px-20 rounded-md text-xl font-semibold text-white -mt-4 ml-4">Make Purchase</button>
                     </div>
                 </div>
             </div>
@@ -177,6 +225,7 @@
     <footer>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
