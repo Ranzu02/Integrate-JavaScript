@@ -68,7 +68,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name2" class="text-xl font-semibold">K. Accessories</p>
-                                <p id="price2" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id="price2" class="text-[#898989]"><span>230.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -105,7 +105,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name4" class="text-xl font-semibold">Sports Back Cap</p>
-                                <p id="price4" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id="price4" class="text-[#898989]"><span>170.35</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 2 -->
@@ -122,7 +122,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name5" class="text-xl font-semibold">Full Jersey Set</p>
-                                <p id="price5" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id="price5" class="text-[#898989]"><span>370.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -139,12 +139,12 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name6" class="text-xl font-semibold">Sports Cats</p>
-                                <p id= "price6" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id= "price6" class="text-[#898989]"><span>520.00</span> TK</p>
                             </div>
                         </div>
                     </div>
                     <h2 class="text-5xl font-semibold pt-16 pb-10">Furniture</h2>
-                    <div class="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    <div class="grid gap-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pb-16">
                         <!-- Card 1 -->
                         <div onclick = "getProductPrice('price7', 'product-name7')" class="card bg-base-100 shadow-xl">
                             <figure class="px-10 pt-10">
@@ -159,7 +159,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name7" class="text-xl font-semibold">Single Relux Chair</p>
-                                <p id="price7" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id="price7" class="text-[#898989]"><span>230.50</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 2 -->
@@ -176,7 +176,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name8" class="text-xl font-semibold">Children Play</p>
-                                <p id="price8" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id="price8" class="text-[#898989]"><span>450.00</span> TK</p>
                             </div>
                         </div>
                         <!-- Card 3 -->
@@ -193,7 +193,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                                   </div>
                                 <p id="product-name9" class="text-xl font-semibold">Flexible Sofa</p>
-                                <p id="price9" class="text-[#898989]"><span>185.00</span> TK</p>
+                                <p id="price9" class="text-[#898989]"><span>160.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                 <div>
                     <div class="bg-[#ffffff] p-8 rounded-md">
                         <h4 class="text-2xl font-medium pb-4">Have coupon?</h4>
-                        <input class="border py-2" placeholder="Your Coupon" type="text" name="" id="">
+                        <input class="border py-2" placeholder="Your Coupon" type="text" name="" id="coupon-element">
                         <button id="button-apply" class="bg-[#e527b2] py-2 px-4 rounded-l-none rounded-md text-xl font-semibold text-white -ml-2" disabled>Apply</button>
                     </div>
                     <div class="bg-[#ffffff] p-8 mt-8 rounded-md">
@@ -215,11 +215,21 @@
                         <p class="text-xl font-medium text-[#e1e1e1] pb-2">Total: <span id="price-after-discount">0</span> TK</p>
                     </div>
                     <div>
-                        <button class="bg-[#e527b2] py-2 px-20 rounded-md text-xl font-semibold text-white -mt-4 ml-4">Make Purchase</button>
+                        <button id="purchase-button" onclick="my_modal_2.showModal()" class="bg-[#e527b2] py-2 px-20 rounded-md text-xl font-semibold text-white -mt-4 ml-4" disabled>Make Purchase</button>
                     </div>
                 </div>
             </div>
         </section>
+        <dialog id="my_modal_2" class="modal">
+            <div class="modal-box">
+              <!-- <h3 class="font-bold text-lg">Hello!</h3>
+              <p class="py-4">Press ESC key or click outside to close</p> -->
+              <img src="images/congo.png" alt="">
+            </div>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
     </main>
 
     <footer>
